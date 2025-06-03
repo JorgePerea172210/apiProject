@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge2\\async\\dto\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:dto\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge2\\async\\dto\\beerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:dto\\beerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge2\\async\\dto\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:dto\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BeerUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerUpdateDto.cs",
+              "RelativeDocumentMoniker": "dto\\BeerUpdateDto.cs",
+              "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerUpdateDto.cs",
+              "RelativeToolTip": "dto\\BeerUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T15:22:49.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerDto.cs",
+              "RelativeDocumentMoniker": "dto\\BeerDto.cs",
+              "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerDto.cs",
+              "RelativeToolTip": "dto\\BeerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T15:21:59.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BeerInsertDto.cs",
+              "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerInsertDto.cs",
+              "RelativeDocumentMoniker": "dto\\BeerInsertDto.cs",
+              "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge2\\async\\dto\\BeerInsertDto.cs",
+              "RelativeToolTip": "dto\\BeerInsertDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T15:20:56.902Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
