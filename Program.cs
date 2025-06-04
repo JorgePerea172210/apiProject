@@ -1,5 +1,8 @@
+using async.dto;
 using async.Models;
 using async.Services;
+using async.Validators;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,12 +18,15 @@ builder.Services.AddHttpClient<IPostService, PostService>(c =>
     c.BaseAddress = new Uri(builder.Configuration["BaseUrlPost"]);
 });
 
-
 // Entity Framework
+string name = "StoreConnection";
 builder.Services.AddDbContext<StoreContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("StoreConection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString(name));
 });
+
+//Validators
+builder.Services.AddScoped<IValidator<BeerInsertDto>, BeerInsertValidator>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

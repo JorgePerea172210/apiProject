@@ -1,0 +1,5 @@
+# Ignorar la carpeta .vs (generada por Visual Studio)
+.vs/
+
+# Ignorar el archivo launchSettings.json
+/Properties/launchSettings.json
