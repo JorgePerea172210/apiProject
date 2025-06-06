@@ -47,23 +47,9 @@ namespace async.Controllers
                 return BadRequest(valResult.Errors);
             }
 
-            var beer = new Beer()
-            {
-                Name = insert.Name,
-                BrandId = insert.BrandId,
-                Alcohol = insert.Alcohol
-            };
+            
 
-            await _context.Beers.AddAsync(beer);
-            await _context.SaveChangesAsync();
-
-            var beerDto = new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                BrandId = beer.BrandId,
-                Alcohol = beer.Alcohol
-            };
+            
 
             return CreatedAtAction(nameof(GetBeer), new { id = beer.BeerId }, beerDto);
         }

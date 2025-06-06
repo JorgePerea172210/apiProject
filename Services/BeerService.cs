@@ -8,21 +8,39 @@ namespace async.Services
     public class BeerService : IBeerService
     {
 
-        private StoreContext _apDbContext;
+        private StoreContext _context;
 
         public BeerService(StoreContext context)
         {
-            _apDbContext = context;
+            _context = context;
         }
 
-        public Task<BeerDto> addBeer(BeerInsertDto insert)
+        public async Task<BeerDto> addBeer(BeerInsertDto insert)
         {
-            throw new NotImplementedException();
+            var beer = new Beer()
+            {
+                Name = insert.Name,
+                BrandId = insert.BrandId,
+                Alcohol = insert.Alcohol
+            };
+
+            await _context.Beers.AddAsync(beer);
+            await _context.SaveChangesAsync();
+
+            var beerDto = new BeerDto
+            {
+                Id = beer.BeerId,
+                Name = beer.Name,
+                BrandId = beer.BrandId,
+                Alcohol = beer.Alcohol
+            };
+
+            return beerDto;
         }
 
         public async Task<BeerDto> GetBeer(int id)
         {
-            var beer = await _apDbContext.Beers.FindAsync(id);
+            var beer = await _context.Beers.FindAsync(id);
 
             if (beer != null)
             {
@@ -40,7 +58,7 @@ namespace async.Services
         }
 
         public async Task<IEnumerable<BeerDto>> GetBeers() =>
-            await _apDbContext.Beers.Select(b => new BeerDto
+            await _context.Beers.Select(b => new BeerDto
             {
                 Id = b.BeerId,
                 Name = b.Name,
