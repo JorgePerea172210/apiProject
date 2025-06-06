@@ -47,15 +47,15 @@
   },
   {
     "ContainingType": "async.Controllers.BeerController",
-    "Method": "GetBeer",
-    "RelativePath": "api/Beer/{id}",
-    "HttpMethod": "GET",
+    "Method": "updateBeer",
+    "RelativePath": "api/Beer",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "update",
+        "Type": "async.dto.BeerUpdateDto",
         "IsRequired": true
       }
     ],
@@ -73,20 +73,15 @@
   },
   {
     "ContainingType": "async.Controllers.BeerController",
-    "Method": "updateBeer",
+    "Method": "GetBeer",
     "RelativePath": "api/Beer/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "update",
-        "Type": "async.dto.BeerUpdateDto",
         "IsRequired": true
       }
     ],
@@ -116,7 +111,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "async.dto.BeerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "async.Controllers.PostController",

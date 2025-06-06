@@ -1,6 +1,6 @@
 ﻿using async.dto;
 
-namespace async.Services
+namespace async.Services.IServices
 {
     public interface IPostService
     {

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\dataware\\apiProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\dto\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:dto\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +13,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\services\\iservices\\ibeerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\iservices\\ibeerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\dto\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:dto\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\validators\\beerupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:validators\\beerupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|d:\\dataware\\apiproject\\models\\beer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,77 +67,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BeerInsertValidator.cs",
-              "DocumentMoniker": "D:\\dataware\\apiProject\\Validators\\BeerInsertValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\BeerInsertValidator.cs",
-              "ToolTip": "D:\\dataware\\apiProject\\Validators\\BeerInsertValidator.cs*",
-              "RelativeToolTip": "Validators\\BeerInsertValidator.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABqAAAAAAAAAA==",
+              "Title": "BeerService.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Services\\BeerService.cs",
+              "RelativeDocumentMoniker": "Services\\BeerService.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Services\\BeerService.cs",
+              "RelativeToolTip": "Services\\BeerService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T03:57:30.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BeerController.cs",
-              "DocumentMoniker": "D:\\dataware\\apiProject\\Controllers\\BeerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BeerController.cs",
-              "ToolTip": "D:\\dataware\\apiProject\\Controllers\\BeerController.cs",
-              "RelativeToolTip": "Controllers\\BeerController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T03:00:17.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BeerInsertDto.cs",
-              "DocumentMoniker": "D:\\dataware\\apiProject\\dto\\BeerInsertDto.cs",
-              "RelativeDocumentMoniker": "dto\\BeerInsertDto.cs",
-              "ToolTip": "D:\\dataware\\apiProject\\dto\\BeerInsertDto.cs",
-              "RelativeToolTip": "dto\\BeerInsertDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:58:02.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BeerDto.cs",
-              "DocumentMoniker": "D:\\dataware\\apiProject\\dto\\BeerDto.cs",
-              "RelativeDocumentMoniker": "dto\\BeerDto.cs",
-              "ToolTip": "D:\\dataware\\apiProject\\dto\\BeerDto.cs",
-              "RelativeToolTip": "dto\\BeerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:54:39.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "D:\\dataware\\apiProject\\Models\\Brand.cs",
-              "RelativeDocumentMoniker": "Models\\Brand.cs",
-              "ToolTip": "D:\\dataware\\apiProject\\Models\\Brand.cs",
-              "RelativeToolTip": "Models\\Brand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:48:29.087Z",
+              "WhenOpened": "2025-06-06T03:57:52.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IBeerService.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Services\\IServices\\IBeerService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IBeerService.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Services\\IServices\\IBeerService.cs",
+              "RelativeToolTip": "Services\\IServices\\IBeerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:49:37.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "Services\\PostService.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Services\\PostService.cs",
+              "RelativeToolTip": "Services\\PostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:48:53.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BeerUpdateDto.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\dto\\BeerUpdateDto.cs",
+              "RelativeDocumentMoniker": "dto\\BeerUpdateDto.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\dto\\BeerUpdateDto.cs",
+              "RelativeToolTip": "dto\\BeerUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:38:33.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\dataware\\apiProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\dataware\\apiProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAD4vxwAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T02:46:12.326Z",
               "EditorCaption": ""
@@ -129,6 +132,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "BeerUpdateValidator.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Validators\\BeerUpdateValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\BeerUpdateValidator.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Validators\\BeerUpdateValidator.cs",
+              "RelativeToolTip": "Validators\\BeerUpdateValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T03:26:07.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BeerInsertValidator.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Validators\\BeerInsertValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\BeerInsertValidator.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Validators\\BeerInsertValidator.cs",
+              "RelativeToolTip": "Validators\\BeerInsertValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T03:57:30.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BeerDto.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\dto\\BeerDto.cs",
+              "RelativeDocumentMoniker": "dto\\BeerDto.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\dto\\BeerDto.cs",
+              "RelativeToolTip": "dto\\BeerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:39.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "Models\\Brand.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Models\\Brand.cs",
+              "RelativeToolTip": "Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:48:29.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\dataware\\apiProject\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -136,12 +189,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T02:40:58.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:40:58.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Beer.cs",
               "DocumentMoniker": "D:\\dataware\\apiProject\\Models\\Beer.cs",
               "RelativeDocumentMoniker": "Models\\Beer.cs",
@@ -149,12 +201,11 @@
               "RelativeToolTip": "Models\\Beer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:35:45.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:35:45.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "StoreContext.cs",
               "DocumentMoniker": "D:\\dataware\\apiProject\\Models\\StoreContext.cs",
               "RelativeDocumentMoniker": "Models\\StoreContext.cs",
@@ -162,7 +213,25 @@
               "RelativeToolTip": "Models\\StoreContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:35:09.398Z",
+              "WhenOpened": "2025-06-04T02:35:09.398Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeerController.cs",
+              "DocumentMoniker": "D:\\dataware\\apiProject\\Controllers\\BeerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BeerController.cs",
+              "ToolTip": "D:\\dataware\\apiProject\\Controllers\\BeerController.cs",
+              "RelativeToolTip": "Controllers\\BeerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T03:00:17.572Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,7 @@
 using async.dto;
 using async.Models;
 using async.Services;
+using async.Services.IServices;
 using async.Validators;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IBeerService, BeerService>();
 
 
 // HttpClient
@@ -27,6 +29,7 @@ builder.Services.AddDbContext<StoreContext>(options =>
 
 //Validators
 builder.Services.AddScoped<IValidator<BeerInsertDto>, BeerInsertValidator>();
+builder.Services.AddScoped<IValidator<BeerUpdateDto>, BeerUpdateValidator>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
