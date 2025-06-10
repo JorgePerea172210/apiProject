@@ -1,17 +1,19 @@
 using async.dto;
 using async.Models;
+using async.Repository;
 using async.Services;
 using async.Services.IServices;
 using async.Validators;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddScoped<IPostService, PostService>();
-builder.Services.AddScoped<IBeerService, BeerService>();
+builder.Services.AddKeyedScoped<ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>, BeerService>("beerService");
 
 
 // HttpClient
@@ -19,6 +21,9 @@ builder.Services.AddHttpClient<IPostService, PostService>(c =>
 {
     c.BaseAddress = new Uri(builder.Configuration["BaseUrlPost"]);
 });
+
+//Repositories
+builder.Services.AddScoped<IRepository<Beer>, BeerRepository>();
 
 // Entity Framework
 string name = "StoreConnection";

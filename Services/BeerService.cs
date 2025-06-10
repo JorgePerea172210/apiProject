@@ -1,31 +1,35 @@
 ﻿using async.dto;
 using async.Models;
+using async.Repository;
 using async.Services.IServices;
 using Microsoft.EntityFrameworkCore;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace async.Services
 {
-    public class BeerService : IBeerService
+    public class BeerService : ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>
     {
 
         private StoreContext _context;
+        private readonly IRepository<Beer> _beerRepository;
 
-        public BeerService(StoreContext context)
+        public BeerService(StoreContext context, IRepository<Beer> beerRepository)
         {
+            _beerRepository = beerRepository;
             _context = context;
         }
 
         public async Task<BeerDto> addBeer(BeerInsertDto insert)
         {
-            var beer = new Beer()
+            var beer = new Beer
             {
                 Name = insert.Name,
-                BrandId = insert.BrandId,
-                Alcohol = insert.Alcohol
+                Alcohol = insert.Alcohol,
+                BrandId = insert.BrandId
             };
 
-            await _context.Beers.AddAsync(beer);
-            await _context.SaveChangesAsync();
+            await _beerRepository.Add(beer);
+            await _beerRepository.Save();
 
             var beerDto = new BeerDto
             {
@@ -40,7 +44,7 @@ namespace async.Services
 
         public async Task<BeerDto> GetBeer(int id)
         {
-            var beer = await _context.Beers.FindAsync(id);
+            var beer = await _beerRepository.GetById(id);
 
             if (beer != null)
             {
@@ -57,23 +61,65 @@ namespace async.Services
             return null;
         }
 
-        public async Task<IEnumerable<BeerDto>> GetBeers() =>
-            await _context.Beers.Select(b => new BeerDto
-            {
-                Id = b.BeerId,
-                Name = b.Name,
-                BrandId = b.BrandId,
-                Alcohol = b.Alcohol
-            }).ToListAsync();
-
-        public Task<BeerDto> updateBeer(BeerUpdateDto update)
+        public async Task<IEnumerable<BeerDto>> GetBeers()
         {
-            throw new NotImplementedException();
+            var beers = await _beerRepository.Get();
+            var beerDtos = beers.Select(beer => new BeerDto
+            {
+                Id = beer.BeerId,
+                Name = beer.Name,
+                Alcohol = beer.Alcohol,
+                BrandId = beer.BrandId
+            });
+            return beerDtos;
         }
 
-        public Task<BeerDto> deleteBeer(int id)
+        public async Task<BeerDto> updateBeer(BeerUpdateDto update)
         {
-            throw new NotImplementedException();
+
+            var beer = await _beerRepository.GetById(update.Id);
+            if (beer != null)
+            {
+                beer.Name = update.Name;
+                beer.Alcohol = update.Alcohol;
+                beer.BrandId = update.BrandId;
+
+                _beerRepository.Update(beer);
+                await _beerRepository.Save();
+
+                var beerDto = new BeerDto
+                {
+                    Id = beer.BeerId,
+                    Name = beer.Name,
+                    Alcohol = beer.Alcohol,
+                    BrandId = beer.BrandId
+                };
+
+                return beerDto;
+            }
+            return null;
+
+        }
+
+        public async Task<BeerDto> deleteBeer(int id)
+        {
+            var beer = await _beerRepository.GetById(id);
+            if (beer != null)
+            {
+
+                var beerDto = new BeerDto
+                {
+                    Id = beer.BeerId,
+                    Name = beer.Name,
+                    BrandId = beer.BrandId,
+                    Alcohol = beer.Alcohol
+                };
+
+                _beerRepository.Delete(beer);
+                await _beerRepository.Save();
+                return beerDto;
+            }
+            return null;
         }
     }
 }

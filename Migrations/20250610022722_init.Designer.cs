@@ -11,8 +11,8 @@ using async.Models;
 namespace async.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250604025042_initDb")]
-    partial class initDb
+    [Migration("20250610022722_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

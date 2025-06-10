@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Beer": {
+    "/api/Beer/GetBeers": {
       "get": {
         "tags": [
           "Beer"
@@ -41,7 +41,49 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Beer/GetBeerById/{id}": {
+      "get": {
+        "tags": [
+          "Beer"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BeerDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BeerDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BeerDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Beer/AddBeer": {
       "post": {
         "tags": [
           "Beer"
@@ -87,7 +129,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Beer/UpdateBeer": {
       "put": {
         "tags": [
           "Beer"
@@ -135,45 +179,7 @@
         }
       }
     },
-    "/api/Beer/{id}": {
-      "get": {
-        "tags": [
-          "Beer"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/BeerDto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BeerDto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BeerDto"
-                }
-              }
-            }
-          }
-        }
-      },
+    "/api/Beer/DeleteBeer/{id}": {
       "delete": {
         "tags": [
           "Beer"
