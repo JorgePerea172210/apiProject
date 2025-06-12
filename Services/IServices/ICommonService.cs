@@ -10,5 +10,6 @@ namespace async.Services.IServices
         Task<T> addBeer(TI insert);
         Task<T> updateBeer(TU update);
         Task<T> deleteBeer(int id);
+
     }
 }

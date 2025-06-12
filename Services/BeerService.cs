@@ -2,6 +2,7 @@
 using async.Models;
 using async.Repository;
 using async.Services.IServices;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -9,35 +10,23 @@ namespace async.Services
 {
     public class BeerService : ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>
     {
-
-        private StoreContext _context;
         private readonly IRepository<Beer> _beerRepository;
+        private IMapper _mapper;
 
-        public BeerService(StoreContext context, IRepository<Beer> beerRepository)
+        public BeerService(IMapper mapper, IRepository<Beer> beerRepository)
         {
+            _mapper = mapper;
             _beerRepository = beerRepository;
-            _context = context;
         }
 
         public async Task<BeerDto> addBeer(BeerInsertDto insert)
         {
-            var beer = new Beer
-            {
-                Name = insert.Name,
-                Alcohol = insert.Alcohol,
-                BrandId = insert.BrandId
-            };
+            var beer = _mapper.Map<Beer>(insert);
 
             await _beerRepository.Add(beer);
             await _beerRepository.Save();
 
-            var beerDto = new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                BrandId = beer.BrandId,
-                Alcohol = beer.Alcohol
-            };
+            var beerDto = _mapper.Map<BeerDto>(beer);
 
             return beerDto;
         }
@@ -48,13 +37,7 @@ namespace async.Services
 
             if (beer != null)
             {
-                var beerDto = new BeerDto
-                {
-                    Id = beer.BeerId,
-                    Name = beer.Name,
-                    Alcohol = beer.Alcohol,
-                    BrandId = beer.BrandId
-                };
+                var beerDto = _mapper.Map<BeerDto>(beer);
                 return beerDto;
             }
 
@@ -64,13 +47,7 @@ namespace async.Services
         public async Task<IEnumerable<BeerDto>> GetBeers()
         {
             var beers = await _beerRepository.Get();
-            var beerDtos = beers.Select(beer => new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                Alcohol = beer.Alcohol,
-                BrandId = beer.BrandId
-            });
+            var beerDtos = beers.Select(beer => _mapper.Map<BeerDto>(beer));
             return beerDtos;
         }
 
@@ -80,20 +57,13 @@ namespace async.Services
             var beer = await _beerRepository.GetById(update.Id);
             if (beer != null)
             {
-                beer.Name = update.Name;
-                beer.Alcohol = update.Alcohol;
-                beer.BrandId = update.BrandId;
+                //Mapeo de un objeto que ya existe
+                beer = _mapper.Map<BeerUpdateDto, Beer>(update, beer);
 
                 _beerRepository.Update(beer);
                 await _beerRepository.Save();
 
-                var beerDto = new BeerDto
-                {
-                    Id = beer.BeerId,
-                    Name = beer.Name,
-                    Alcohol = beer.Alcohol,
-                    BrandId = beer.BrandId
-                };
+                var beerDto = _mapper.Map<BeerDto>(beer);
 
                 return beerDto;
             }
@@ -107,13 +77,7 @@ namespace async.Services
             if (beer != null)
             {
 
-                var beerDto = new BeerDto
-                {
-                    Id = beer.BeerId,
-                    Name = beer.Name,
-                    BrandId = beer.BrandId,
-                    Alcohol = beer.Alcohol
-                };
+                var beerDto = _mapper.Map<BeerDto>(beer);
 
                 _beerRepository.Delete(beer);
                 await _beerRepository.Save();
