@@ -45,13 +45,18 @@ namespace async.Controllers
                 return BadRequest(valResult.Errors);
             }
 
+            if (!_beerService.validate(insert))
+            {
+                return BadRequest(_beerService.errors);
+            }
+
             var beerDto = await _beerService.addBeer(insert);
 
             return CreatedAtAction(nameof(GetBeer), new { id = beerDto.Id }, beerDto);
         }
 
         [HttpPut("UpdateBeer")]
-        public async Task<ActionResult<BeerDto>> updateBeer(BeerUpdateDto update) 
+        public async Task<ActionResult<BeerDto>> updateBeer(BeerUpdateDto update)
         {
 
             var validationResult = await _updateValidator.ValidateAsync(update);
@@ -59,6 +64,11 @@ namespace async.Controllers
             if (!validationResult.IsValid)
             {
                 return BadRequest(validationResult.Errors);
+            }
+
+            if (!_beerService.validate(update))
+            {
+                return BadRequest(_beerService.errors);
             }
 
             var beerDto = await _beerService.updateBeer(update);
@@ -75,4 +85,3 @@ namespace async.Controllers
         }
     }
 }
-//Comentario prueba GitLens

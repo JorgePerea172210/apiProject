@@ -33,5 +33,8 @@ namespace async.Repository
             _context.Beers.Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
         }
+
+        public IEnumerable<Beer> Search(Func<Beer, bool> filter) =>
+            _context.Beers.Where(filter).ToList();
     }
 }

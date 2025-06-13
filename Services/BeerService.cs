@@ -18,6 +18,7 @@ namespace async.Services
         {
             _mapper = mapper;
             _beerRepository = beerRepository;
+            errors = new List<string>();
         }
 
         public async Task<BeerDto> addBeer(BeerInsertDto insert)
@@ -89,11 +90,21 @@ namespace async.Services
 
         public bool validate(BeerInsertDto dto)
         {
+            if (_beerRepository.Search(b => b.Name == dto.Name).Count() > 0)
+            {
+                errors.Add("Beer with this name already exists.");
+                return false;
+            }
             return true;
         }
 
         public bool validate(BeerUpdateDto dto)
         {
+            if (_beerRepository.Search(b => b.Name == dto.Name && dto.Id != b.BeerId).Count() > 0)
+            {
+                errors.Add("Beer with this name already exists.");
+                return false;
+            }
             return true;
         }
     }
