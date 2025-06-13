@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge\\apiproject\\services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge\\apiproject\\services\\iservices\\icommonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\iservices\\icommonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge\\apiproject\\automappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:automappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge\\apiproject\\services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|solutionrelative:services\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9277BC81-F651-4E7E-A97D-67D81C108938}|async.csproj|c:\\users\\practicante_sp\\documents\\jorge\\apiproject\\models\\beer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 199,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Models\\Beer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T17:34:26.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T17:34:26.309Z"
             },
             {
               "$type": "Document",
@@ -87,12 +86,11 @@
               "RelativeToolTip": "dto\\BeerInsertDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T17:34:24.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T17:34:24.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\AutoMappers\\MappingProfile.cs",
               "RelativeDocumentMoniker": "AutoMappers\\MappingProfile.cs",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Repository\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T03:10:21.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T03:10:21.321Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T15:38:29.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T15:38:29.95Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "Repository\\BeerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T03:15:19.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T03:15:19.655Z"
             },
             {
               "$type": "Document",
@@ -152,37 +147,36 @@
               "RelativeToolTip": "dto\\BeerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T15:36:21.831Z",
+              "WhenOpened": "2025-06-06T15:36:21.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BeerService.cs",
+              "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\BeerService.cs",
+              "RelativeDocumentMoniker": "Services\\BeerService.cs",
+              "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\BeerService.cs",
+              "RelativeToolTip": "Services\\BeerService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAkwGAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:38:46.365Z",
               "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BeerService.cs",
-              "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\BeerService.cs",
-              "RelativeDocumentMoniker": "Services\\BeerService.cs",
-              "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\BeerService.cs",
-              "RelativeToolTip": "Services\\BeerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T15:38:46.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ICommonService.cs",
               "DocumentMoniker": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\IServices\\ICommonService.cs",
               "RelativeDocumentMoniker": "Services\\IServices\\ICommonService.cs",
               "ToolTip": "C:\\Users\\Practicante_SP\\Documents\\jorge\\apiProject\\Services\\IServices\\ICommonService.cs",
               "RelativeToolTip": "Services\\IServices\\ICommonService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:50:36.191Z",
               "EditorCaption": ""
@@ -197,8 +191,7 @@
               "RelativeToolTip": "Controllers\\BeerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T15:38:16.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T15:38:16.02Z"
             }
           ]
         }

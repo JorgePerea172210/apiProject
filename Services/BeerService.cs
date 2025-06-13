@@ -10,6 +10,7 @@ namespace async.Services
 {
     public class BeerService : ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>
     {
+        public List<string> errors { get; }
         private readonly IRepository<Beer> _beerRepository;
         private IMapper _mapper;
 
@@ -84,6 +85,16 @@ namespace async.Services
                 return beerDto;
             }
             return null;
+        }
+
+        public bool validate(BeerInsertDto dto)
+        {
+            return true;
+        }
+
+        public bool validate(BeerUpdateDto dto)
+        {
+            return true;
         }
     }
 }
